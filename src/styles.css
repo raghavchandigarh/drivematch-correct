@@ -138,3 +138,78 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.3);
 }
+
+/* Add these new styles to your existing CSS */
+
+/* Dropdown Menu Styling */
+.custom-dropdown .dropdown-toggle {
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.custom-dropdown .dropdown-toggle::after {
+    color: white;
+    border-top-color: white;
+}
+
+.custom-dropdown .dropdown-menu {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-top: 8px;
+}
+
+.custom-dropdown .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background: #f8f9fa;
+    color: #1F4D35;
+}
+
+/* Rent Vehicle Button Styling */
+.rent-vehicle-btn {
+    color: white !important;
+    padding: 8px 16px !important;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.rent-vehicle-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    .custom-dropdown, .rent-vehicle-btn {
+        margin: 5px 0;
+    }
+
+    header .d-flex.align-items-center {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .rent-vehicle-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
